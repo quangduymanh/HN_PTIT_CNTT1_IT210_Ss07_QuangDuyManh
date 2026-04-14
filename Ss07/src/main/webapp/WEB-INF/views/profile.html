@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Cập nhật thông tin nhà hàng</title>
+</head>
+<body>
+
+<h2>Cập nhật hồ sơ nhà hàng</h2>
+
+<form action="/merchant/update-profile" method="POST">
+
+  <label>Tên cửa hàng:</label><br>
+  <input type="text" name="name" /><br><br>
+
+  <label>Số điện thoại:</label><br>
+  <input type="text" name="phone" /><br><br>
+
+  <label>Đang mở cửa:</label><br>
+  <input type="hidden" name="active" value="false" />
+  <input type="checkbox" name="active" value="true" /> Mở cửa<br><br>
+
+  <button type="submit">Lưu thông tin</button>
+
+</form>
+
+</body>
+</html>

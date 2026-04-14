@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h2>Tạo Combo</h2>
+
+<form th:action="@{/combo/add}" method="post" enctype="multipart/form-data">
+
+    <input type="text" name="name" placeholder="Tên combo"/><br><br>
+
+    <label><input type="checkbox" name="items" value="Pizza"/> Pizza</label><br>
+    <label><input type="checkbox" name="items" value="Trà sữa"/> Trà sữa</label><br>
+    <label><input type="checkbox" name="items" value="Gà rán"/> Gà rán</label><br><br>
+
+    <input type="file" name="banner"/><br><br>
+
+    <button type="submit">Tạo combo</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h2>Chi tiết Combo</h2>
+
+<p>Tên: <span th:text="${combo.name}"></span></p>
+<p>Món: <span th:text="${combo.itemList}"></span></p>
+
+<img th:src="${combo.banner}" width="300"/>
+
+</body>
+</html>
