@@ -26,7 +26,7 @@ public class AppConfig implements WebMvcConfigurer {
         return new StandardServletMultipartResolver();
     }
 
-    // 👉 đọc file HTML trong views
+    // đọc file HTML trong views
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
@@ -51,7 +51,7 @@ public class AppConfig implements WebMvcConfigurer {
         return resolver;
     }
 
-    // 👉 hiển thị ảnh từ ổ C
+    // hiển thị ảnh từ ổ C
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/images/**")
